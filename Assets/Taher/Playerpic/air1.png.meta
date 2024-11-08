@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 007b229fbffc9894283b190303c76bd3
+guid: 5f8501fcec4242a4ea82471333af815c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5323263809425364651
-    second: ground_monk_0
+      213: 5751978214682897379
+    second: air1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,11 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< Updated upstream
-    textureCompression: 2
-=======
     textureCompression: 1
->>>>>>> Stashed changes
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ground_monk_0
+      name: air1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 62
-        height: 56
+        width: 61
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba6dd761b3800e940800000000000000
-      internalID: 5323263809425364651
+      spriteID: 3eba5f106b123df40800000000000000
+      internalID: 5751978214682897379
       vertices: []
       indices: 
       edges: []
