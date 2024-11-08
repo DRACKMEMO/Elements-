@@ -67,7 +67,7 @@ Material:
     - _WaterSpeed: 0.1
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 1, g: 0.98134786, b: 0.14199996, a: 1}
+    - _Color: {r: 1, g: 0.82559144, b: 0.3679244, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
