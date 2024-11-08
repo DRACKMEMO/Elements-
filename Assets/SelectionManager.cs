@@ -60,14 +60,14 @@ public class SelectionManager : MonoBehaviour
         }
     }
 
-    private void OnNextButtonClicked()
+    public void OnNextButtonClicked()
     {
         // Hide Player 1 selection canvas and show Player 2 selection canvas
         player1SelectionCanvas.SetActive(false);
         player2SelectionCanvas.SetActive(true);
     }
 
-    private void StartGame()
+    public void StartGame()
     {
         // Check if both players have selected their characters
         if (player1SelectedIndex != -1 && player2SelectedIndex != -1)
