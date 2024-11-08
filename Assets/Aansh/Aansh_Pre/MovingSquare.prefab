@@ -184,7 +184,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
   point1: {fileID: 5671934561823596616}
   point2: {fileID: 7762188687076289443}
   speed: 0.4
-  startDelay: 30
+  startDelay: 60
 --- !u!1 &3597707310067437847
 GameObject:
   m_ObjectHideFlags: 0
