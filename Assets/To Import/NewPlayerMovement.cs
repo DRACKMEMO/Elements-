@@ -30,33 +30,36 @@ public class NewPlayerMovement : MonoBehaviour
 
     void Update()
     {
-        //float moveInput = Input.GetAxis("Horizontal");
-        //// Flip sprite based on movement direction
-        //if (moveInput != 0)
-        //{
-        //    sr.flipX = moveInput < 0;
-        //}
-
         Move();
 
         // Handle jumping
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (IsGrounded())
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            if (animator != null) animator.SetTrigger("Jump");
+            if (playerID == 1 && Input.GetKeyDown(KeyCode.Space))
+            {
+                Jump();
+            }
+            else if (playerID == 2 && Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                Jump();
+            }
         }
 
-        // Trigger mouse click animation
-        
+        // Trigger attack animation
+        if (playerID == 1 && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Attack();
+        }
+        else if (playerID == 2 && Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            Attack();
+        }
 
         // Set animator parameters
         if (animator != null)
         {
-            if (IsGrounded())
-            {
-                animator.SetFloat("Speed", Mathf.Abs(moveSpeed));
-            }
             animator.SetBool("IsGrounded", IsGrounded());
+            animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         }
     }
 
@@ -75,10 +78,6 @@ public class NewPlayerMovement : MonoBehaviour
             {
                 movement.x += 1;
             }
-            if (Input.GetMouseButtonDown(0)) // Left mouse button click
-            {
-                if (animator != null) animator.SetTrigger("Attack");
-            }
         }
 
         // Player 2 controls (Arrow Keys)
@@ -92,14 +91,31 @@ public class NewPlayerMovement : MonoBehaviour
             {
                 movement.x += 1;
             }
-            if (Input.GetKeyDown(KeyCode.KeypadEnter)) // Left mouse button click
-            {
-                if (animator != null) animator.SetTrigger("Attack");
-            }
         }
 
         // Normalize the movement vector and apply speed
-        rb.linearVelocity = movement.normalized * moveSpeed;
+        rb.velocity = new Vector2(movement.normalized.x * moveSpeed, rb.velocity.y);
+
+        // Flip the sprite based on movement direction
+        if (movement.x < 0)
+        {
+            sr.flipX = true; // Flip left
+        }
+        else if (movement.x > 0)
+        {
+            sr.flipX = false; // Flip right
+        }
+    }
+
+    private void Jump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        if (animator != null) animator.SetTrigger("Jump");
+    }
+
+    private void Attack()
+    {
+        if (animator != null) animator.SetTrigger("Attack");
     }
 
     // Check if player is grounded
