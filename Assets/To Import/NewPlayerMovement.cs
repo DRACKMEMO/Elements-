@@ -35,6 +35,7 @@ public class NewPlayerMovement : MonoBehaviour
         // Handle jumping
         if (IsGrounded())
         {
+<<<<<<< Updated upstream
             if (playerID == 1 && Input.GetKeyDown(KeyCode.Space))
             {
                 Jump();
@@ -43,6 +44,10 @@ public class NewPlayerMovement : MonoBehaviour
             {
                 Jump();
             }
+=======
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            if (animator != null) animator.SetTrigger("Jump");
+>>>>>>> Stashed changes
         }
 
         // Trigger attack animation
