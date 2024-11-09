@@ -33,8 +33,8 @@ public class RandomMapSelector : MonoBehaviour
 
         // Change the size and position of the selected image
         Image selectedImage = images[randomIndex];
-        selectedImage.rectTransform.sizeDelta = new Vector2(250, 250); // Set width and height to 250 units
-        selectedImage.rectTransform.anchoredPosition = new Vector2(350, 0); // Set position to (350, 0)
+        selectedImage.rectTransform.sizeDelta = new Vector2(800, 800); // Set width and height to 250 units
+        selectedImage.rectTransform.anchoredPosition = new Vector2(900, 0); // Set position to (350, 0)
 
         // Destroy the other images
         for (int i = 0; i < images.Length; i++)

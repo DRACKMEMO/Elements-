@@ -1,4 +1,4 @@
-using UnityEngine;
+    using UnityEngine;
 
 public class NewPlayerMovement : MonoBehaviour
 {
@@ -50,7 +50,7 @@ public class NewPlayerMovement : MonoBehaviour
         {
             Attack();
         }
-        else if (playerID == 2 && Input.GetKeyDown(KeyCode.RightControl))
+        if (playerID == 2 && Input.GetKeyDown(KeyCode.RightAlt))
         {
             Attack();
         }
@@ -123,5 +123,6 @@ public class NewPlayerMovement : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, Vector2.down, 0.1f, groundLayer);
         return hit.collider != null;
+        animator.SetBool("isGround", true);
     }
 }
