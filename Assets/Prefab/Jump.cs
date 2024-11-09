@@ -23,7 +23,7 @@ public class PlayerJump : MonoBehaviour
     void Jump()
     {
         Debug.Log("Jump called"); // Log when jump is called
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce); // Use velocity instead of linearVelocity
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Use velocity instead of linearVelocity
         isGrounded = false; // Set isGrounded to false after jumping
     }
 

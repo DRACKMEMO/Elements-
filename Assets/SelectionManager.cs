@@ -75,7 +75,7 @@ public class SelectionManager : MonoBehaviour
             Debug.Log("Starting the game with Player 1: " + player1Characters[player1SelectedIndex].name +
                       " and Player 2: " + player2Characters[player2SelectedIndex].name);
             // Load the game scene
-            SceneManager.LoadScene("GameScene"); // Replace "GameScene" with your actual game scene name
+            SceneManager.LoadScene("test"); // Replace "GameScene" with your actual game scene name
         }
         else
         {
