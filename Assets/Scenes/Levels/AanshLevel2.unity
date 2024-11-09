@@ -203,7 +203,15 @@ PrefabInstance:
     - target: {fileID: 2827087425737898474, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1092742613}
+      objectReference: {fileID: 1076140564}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.08584661
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.042873304
+      objectReference: {fileID: 0}
     - target: {fileID: 8308216965800589703, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
       propertyPath: waveStep
       value: 12
@@ -859,6 +867,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 797156054}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.058093973
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.029046986
+      objectReference: {fileID: 0}
     - target: {fileID: 8308216965800589703, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
       propertyPath: waveStep
       value: 12
@@ -936,6 +952,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1635375742}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.085847184
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.04287359
+      objectReference: {fileID: 0}
     - target: {fileID: 8308216965800589703, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
       propertyPath: waveStep
       value: 12
@@ -1822,6 +1846,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 522493965}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.030440181
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.015170097
+      objectReference: {fileID: 0}
     - target: {fileID: 8308216965800589703, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
       propertyPath: waveStep
       value: 12
@@ -3100,7 +3132,7 @@ MonoBehaviour:
   - {x: 38.67435, y: -6.8217783, z: 0}
   - {x: -29.349886, y: -6.842169, z: 0}
   - {x: -44.897346, y: -8.332231, z: 0}
---- !u!43 &1092742613
+--- !u!43 &1076140564
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3432,6 +3464,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 28268946}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.03039076
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824980407472581439, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.01519538
+      objectReference: {fileID: 0}
     - target: {fileID: 8308216965800589703, guid: e9d17189ebf971149a4e832a4f0c694b, type: 3}
       propertyPath: waveStep
       value: 12
