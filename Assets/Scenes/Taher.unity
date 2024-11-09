@@ -2913,15 +2913,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player1Characters:
+  - {fileID: 776346824}
+  - {fileID: 2108679487}
   - {fileID: 1025955789}
   - {fileID: 595678061}
-  - {fileID: 2108679487}
-  - {fileID: 776346824}
   player2Characters:
-  - {fileID: 1025955789}
-  - {fileID: 595678061}
-  - {fileID: 2108679487}
   - {fileID: 776346824}
+  - {fileID: 2108679487}
+  - {fileID: 595678061}
+  - {fileID: 595678061}
   player1SelectionCanvas: {fileID: 198827578}
   player2SelectionCanvas: {fileID: 328688220}
   nextButton: {fileID: 1658934412}
