@@ -50,7 +50,7 @@ public class NewPlayerMovement : MonoBehaviour
         {
             Attack();
         }
-        else if (playerID == 2 && Input.GetKeyDown(KeyCode.KeypadEnter))
+        else if (playerID == 2 && Input.GetKeyDown(KeyCode.RightControl))
         {
             Attack();
         }
@@ -59,7 +59,7 @@ public class NewPlayerMovement : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("IsGrounded", IsGrounded());
-            animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+            animator.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
         }
     }
 
@@ -94,7 +94,7 @@ public class NewPlayerMovement : MonoBehaviour
         }
 
         // Normalize the movement vector and apply speed
-        rb.velocity = new Vector2(movement.normalized.x * moveSpeed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(movement.normalized.x * moveSpeed, rb.linearVelocity.y);
 
         // Flip the sprite based on movement direction
         if (movement.x < 0)
@@ -109,7 +109,7 @@ public class NewPlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         if (animator != null) animator.SetTrigger("Jump");
     }
 
